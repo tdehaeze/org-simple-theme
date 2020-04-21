@@ -1,0 +1,63 @@
+#content div.blue div.block {
+  background: #8ea7c5; }
+
+#content div.blue p.customtitle {
+  background: #3f5a7b; }
+
+#content div.red div.block {
+  background: #d29097; }
+
+#content div.red p.customtitle {
+  background: #8f3a42; }
+
+#content div.yellow div.block {
+  background: #f1dbae; }
+
+#content div.yellow p.customtitle {
+  background: #dba02b; }
+
+#content div.orange div.block {
+  background: #deab9b; }
+
+#content div.orange p.customtitle {
+  background: #a95337; }
+
+#content div.green div.block {
+  background: #bfd2af; }
+
+#content div.green p.customtitle {
+  background: #719453; }
+
+#content div.purple div.block {
+  background: #cbb0c6; }
+
+#content div.purple p.customtitle {
+  background: #875a7f; }
+
+#content .block {
+  padding: 12px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  background: #ECEFF4; }
+
+#content p:first-child {
+  margin-top: 0; }
+
+#content p:last-child {
+  margin-bottom: 0; }
+
+#content .first {
+  margin-top: 0; }
+
+#content .last {
+  margin-bottom: 0; }
+
+#content .customtitle {
+  line-height: 1;
+  font-weight: bold;
+  display: block;
+  color: #FFF;
+  padding: 6px 12px;
+  margin-bottom: 0px; }
+  #content .customtitle i {
+    margin-right: 10px; }
