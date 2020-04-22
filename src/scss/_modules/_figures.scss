@@ -1,0 +1,19 @@
+@import "../_partials/_caption.scss";
+
+#content {
+    .figure {
+        align: center;
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        p {
+            .figure-number {
+                @extend %caption;
+            }
+            text-align: center;
+        }
+    }
+}

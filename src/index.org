@@ -1,0 +1,256 @@
+#+TITLE: Test page
+#+HTML_HEAD: <script src="js/script.js"></script>
+
+* Markup
+** Text
+*Bold Text*
+
+/Italic Text/
+
+_Underlined Text_
+
++Strike Through+
+
+=Verbatim=
+
+~Inline code~
+
+[[./index.html][HyperLinks]]
+
+** Lists
+*** Ordered List
+
+1. Item number 1
+   1. Item number 1.1
+   2. Item number 1.2
+   3. Item number 1.3
+      - Foo
+      - Bar
+2. Item number 2
+3. Item number 3
+4. Item number 4
+5. Item number 5
+
+*** Unordered List
+
+- Like
+  - This
+    - One
+
+*** Description List
+
+- Tip Blocks :: Are for displaying tips.
+- Warning Blocks :: Are for displaying warnings.
+- Danger Blocks :: Are for displaying dangers.
+
+*** Checkboxes
+
+- [ ] Unchecked 1
+- [ ] Unchecked 2
+- [X] Checked 1
+
+* Special Blocks
+#+attr_html: :title Titre du block :data-color blue :data-icon warning
+#+begin_block
+  text
+#+end_block
+
+#+attr_html: :title Titre du block :data-color yellow :data-icon github
+#+begin_block
+  text
+#+end_block
+
+#+attr_html: :title Titre du block :data-color red
+#+begin_block
+  text
+#+end_block
+
+#+attr_html: :title Titre du block :data-color orange
+#+begin_block
+  text
+#+end_block
+
+#+attr_html: :title Titre du block :data-color purple
+#+begin_block
+  text
+#+end_block
+
+#+attr_html: :title Titre du block :data-color green
+#+begin_block
+  text
+#+end_block
+
+
+#+attr_html: :data-color green
+#+caption: Title
+#+begin_block
+  text
+#+end_block
+
+* Source Code
+** Simple Source Block
+
+#+BEGIN_SRC python :results output replace
+  def fib(n):
+      a, b = 0, 1
+      while a < n:
+          print(a, end=' ')
+          a, b = b, a+b
+
+      print()
+
+
+  fib(1000)
+#+END_SRC
+
+#+RESULTS:
+: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+
+** Source Block with a Caption and a link
+
+See listing [[lst:test]].
+
+#+name: lst:test
+#+caption: test
+#+BEGIN_SRC python :results output replace
+  def fib(n):
+      a, b = 0, 1
+      while a < n:
+          print(a, end=' ')
+          a, b = b, a+b
+
+      print()
+
+
+  fib(1000)
+#+END_SRC
+
+#+RESULTS:
+: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+
+** TODO Highlight parts of the source block
+
+#+ATTR_HIGHLIGHT: 1,5-7
+#+BEGIN_SRC python :eval no
+  def fib(n):
+      a, b = 0, 1
+      while a < n:
+          print(a, end=' ')
+          a, b = b, a+b
+
+      print()
+
+
+  fib(1000)
+#+END_SRC
+
+** Source block inside a special block
+
+#+begin_block org
+
+Here is an important python code.
+
+#+BEGIN_SRC python :eval no
+  def fib(n):
+      a, b = 0, 1
+      while a < n:
+          print(a, end=' ')
+          a, b = b, a+b
+
+      print()
+#+END_SRC
+
+#+end_block
+
+** Source block with username and hostname
+
+#+ATTR_USERNAME: username
+#+ATTR_HOSTNAME: hostname
+#+begin_src bash
+  pwd
+#+end_src
+
+#+RESULTS:
+: /home/thomas/Cloud/org-simple-theme
+
+
+** Source block with a link to the tangled file
+
+#+ATTR_FILEPATH: get files and add a download button, it uses HTTP so, no local files.
+
+** Folded source block
+
+
+* Formulas
+** Simple equations
+Inline formulas: $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$
+
+\[ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \]
+
+** Numbered equations
+
+See Equation eqref:eq:label1.
+
+\begin{equation}
+  \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \label{eq:label1}
+\end{equation}
+
+* Quotes
+** Simple Quote
+#+begin_quote
+Once upon a time..........
+I forgot the rest.
+#+end_quote
+
+** Quote with a Source Reference
+
+#+attr_html: :title Titre du block
+#+begin_quote
+The truth always turns out to be simpler than you thought.
+#+end_quote
+
+** Make a reference to a quote
+
+#+begin_quote
+I would rather have questions that can't be answered than answers that can't be questioned.
+#+end_quote
+
+* Tables
+** Basic Table
+
+| A | B | C |
+|---+---+---|
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
+
+** Table with a caption
+
+#+caption: Table caption
+| A | B | C |
+|---+---+---|
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
+
+** Reference to a table
+
+#+name: tab:table_name
+#+caption: Table caption
+| A | B | C |
+|---+---+---|
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
+
+* Images
+** Simple image
+
+[[file:assets/figure.png]]
+
+** Simple image with caption
+See Figure [[fig:figure_name]].
+
+#+name: fig:figure_name
+#+caption: Figure caption
+[[file:assets/figure.png]]

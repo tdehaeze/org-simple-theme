@@ -1,0 +1,29 @@
+{
+  "name": "org-simple-theme",
+  "version": "1.0.0",
+  "description": "A simple CSS-JS combination for org-mode html export",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdehaeze/org-simple-theme.git"
+  },
+  "author": "Thomas Dehaeze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tdehaeze/org-simple-theme/issues"
+  },
+  "homepage": "https://github.com/tdehaeze/org-simple-theme#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "highlight.js": "^10.0.0",
+    "jquery": "^3.5.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  }
+}

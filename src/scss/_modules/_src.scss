@@ -1,0 +1,19 @@
+@import "../_partials/_caption.scss";
+
+#content {
+    .org-src-container {
+        margin: 1em;
+        label.org-src-name {
+            margin-left: 0em;
+            margin-bottom: 0.5em;
+            .listing-number {
+                @extend %caption;
+
+            }
+        }
+        pre.src {
+            margin: 0;
+
+        }
+    }
+}

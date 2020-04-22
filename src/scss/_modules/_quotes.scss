@@ -1,0 +1,14 @@
+#content {
+    blockquote {
+        padding: 12px;
+        border-radiuis: 12px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        background: $color-bg-1;
+        .quote-title {
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-04-22 mer. 18:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Test page</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Thomas Dehaeze" />
+<script src="js/script.js"></script>
+<script>MathJax = {
+          tex: {
+            tags: 'ams',
+            macros: {bm: ["\\boldsymbol{#1}",1],}
+            }
+          };
+          </script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Test page</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orge80af5d">1. Markup</a>
+<ul>
+<li><a href="#orgc45596a">1.1. Text</a></li>
+<li><a href="#org6928e9c">1.2. Lists</a>
+<ul>
+<li><a href="#org13ddf69">1.2.1. Ordered List</a></li>
+<li><a href="#org7f1a488">1.2.2. Unordered List</a></li>
+<li><a href="#org6213e48">1.2.3. Description List</a></li>
+<li><a href="#org3ef4ebc">1.2.4. Checkboxes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9446458">2. Special Blocks</a></li>
+<li><a href="#org2161059">3. Source Code</a>
+<ul>
+<li><a href="#org75e35b1">3.1. Simple Source Block</a></li>
+<li><a href="#org75b7452">3.2. Source Block with a Caption and a link</a></li>
+<li><a href="#org683e67f">3.3. Highlight parts of the source block</a></li>
+<li><a href="#org946018a">3.4. Source block inside a special block</a></li>
+<li><a href="#orgfdaaeb5">3.5. Source block with username and hostname</a></li>
+<li><a href="#orga7ef624">3.6. Source block with a link to the tangled file</a></li>
+<li><a href="#orgba07c9a">3.7. Folded source block</a></li>
+</ul>
+</li>
+<li><a href="#orgc467143">4. Formulas</a>
+<ul>
+<li><a href="#org74f0c6b">4.1. Simple equations</a></li>
+<li><a href="#org42b4136">4.2. Numbered equations</a></li>
+</ul>
+</li>
+<li><a href="#org3f84d44">5. Quotes</a>
+<ul>
+<li><a href="#org2d00e87">5.1. Simple Quote</a></li>
+<li><a href="#org157fd2f">5.2. Quote with a Source Reference</a></li>
+<li><a href="#org13cde4b">5.3. Make a reference to a quote</a></li>
+</ul>
+</li>
+<li><a href="#org60c6c95">6. Tables</a>
+<ul>
+<li><a href="#org4620f84">6.1. Basic Table</a></li>
+<li><a href="#org02c435d">6.2. Table with a caption</a></li>
+<li><a href="#orgb2c87d0">6.3. Reference to a table</a></li>
+</ul>
+</li>
+<li><a href="#org83e12c5">7. Images</a>
+<ul>
+<li><a href="#org43efd7a">7.1. Simple image</a></li>
+<li><a href="#orge14e71c">7.2. Simple image with caption</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge80af5d" class="outline-2">
+<h2 id="orge80af5d"><span class="section-number-2">1</span> Markup</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgc45596a" class="outline-3">
+<h3 id="orgc45596a"><span class="section-number-3">1.1</span> Text</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<b>Bold Text</b>
+</p>
+
+<p>
+<i>Italic Text</i>
+</p>
+
+<p>
+<span class="underline">Underlined Text</span>
+</p>
+
+<p>
+<del>Strike Through</del>
+</p>
+
+<p>
+<code>Verbatim</code>
+</p>
+
+<p>
+<code>Inline code</code>
+</p>
+
+<p>
+<a href="./index.html">HyperLinks</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6928e9c" class="outline-3">
+<h3 id="org6928e9c"><span class="section-number-3">1.2</span> Lists</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org13ddf69" class="outline-4">
+<h4 id="org13ddf69"><span class="section-number-4">1.2.1</span> Ordered List</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ol class="org-ol">
+<li>Item number 1
+<ol class="org-ol">
+<li>Item number 1.1</li>
+<li>Item number 1.2</li>
+<li>Item number 1.3
+<ul class="org-ul">
+<li>Foo</li>
+<li>Bar</li>
+</ul></li>
+</ol></li>
+<li>Item number 2</li>
+<li>Item number 3</li>
+<li>Item number 4</li>
+<li>Item number 5</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org7f1a488" class="outline-4">
+<h4 id="org7f1a488"><span class="section-number-4">1.2.2</span> Unordered List</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li>Like
+<ul class="org-ul">
+<li>This
+<ul class="org-ul">
+<li>One</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6213e48" class="outline-4">
+<h4 id="org6213e48"><span class="section-number-4">1.2.3</span> Description List</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<dl class="org-dl">
+<dt>Tip Blocks</dt><dd>Are for displaying tips.</dd>
+<dt>Warning Blocks</dt><dd>Are for displaying warnings.</dd>
+<dt>Danger Blocks</dt><dd>Are for displaying dangers.</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org3ef4ebc" class="outline-4">
+<h4 id="org3ef4ebc"><span class="section-number-4">1.2.4</span> Checkboxes</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Unchecked 1</li>
+<li class="off"><code>[&#xa0;]</code> Unchecked 2</li>
+<li class="on"><code>[X]</code> Checked 1</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9446458" class="outline-2">
+<h2 id="org9446458"><span class="section-number-2">2</span> Special Blocks</h2>
+<div class="outline-text-2" id="text-2">
+<div title="Titre du block" data-color="blue" data-icon="warning" class="block">
+<p>
+text
+</p>
+
+</div>
+
+<div title="Titre du block" data-color="yellow" data-icon="github" class="block">
+<p>
+text
+</p>
+
+</div>
+
+<div title="Titre du block" data-color="red" class="block">
+<p>
+text
+</p>
+
+</div>
+
+<div title="Titre du block" data-color="orange" class="block">
+<p>
+text
+</p>
+
+</div>
+
+<div title="Titre du block" data-color="purple" class="block">
+<p>
+text
+</p>
+
+</div>
+
+<div title="Titre du block" data-color="green" class="block">
+<p>
+text
+</p>
+
+</div>
+
+
+<div data-color="green" class="block">
+<p>
+text
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2161059" class="outline-2">
+<h2 id="org2161059"><span class="section-number-2">3</span> Source Code</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org75e35b1" class="outline-3">
+<h3 id="org75e35b1"><span class="section-number-3">3.1</span> Simple Source Block</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="org-src-container">
+<pre class="src src-python">def fib(n):
+    a, b = 0, 1
+    while a &lt; n:
+        print(a, end=' ')
+        a, b = b, a+b
+
+    print()
+
+
+fib(1000)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org75b7452" class="outline-3">
+<h3 id="org75b7452"><span class="section-number-3">3.2</span> Source Block with a Caption and a link</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+See listing <a href="#org10f6df7">1</a>.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 1: </span>test</label><pre class="src src-python" id="org10f6df7">def fib(n):
+    a, b = 0, 1
+    while a &lt; n:
+        print(a, end=' ')
+        a, b = b, a+b
+
+    print()
+
+
+fib(1000)
+</pre>
+</div>
+
+<pre class="example">
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org683e67f" class="outline-3">
+<h3 id="org683e67f"><span class="section-number-3">3.3</span> Highlight parts of the source block</h3>
+<div class="outline-text-3" id="text-3-3">
+<div class="org-src-container">
+<pre class="src src-python">def fib(n):
+    a, b = 0, 1
+    while a &lt; n:
+        print(a, end=' ')
+        a, b = b, a+b
+
+    print()
+
+
+fib(1000)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org946018a" class="outline-3">
+<h3 id="org946018a"><span class="section-number-3">3.4</span> Source block inside a special block</h3>
+<div class="outline-text-3" id="text-3-4">
+<div class="block">
+<p>
+
+</p>
+
+<p>
+Here is an important python code.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">def fib(n):
+    a, b = 0, 1
+    while a &lt; n:
+        print(a, end=' ')
+        a, b = b, a+b
+
+    print()
+</pre>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfdaaeb5" class="outline-3">
+<h3 id="orgfdaaeb5"><span class="section-number-3">3.5</span> Source block with username and hostname</h3>
+<div class="outline-text-3" id="text-3-5">
+<div class="org-src-container">
+<pre class="src src-bash">pwd
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orga7ef624" class="outline-3">
+<h3 id="orga7ef624"><span class="section-number-3">3.6</span> Source block with a link to the tangled file</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+</div>
+
+<div id="outline-container-orgba07c9a" class="outline-3">
+<h3 id="orgba07c9a"><span class="section-number-3">3.7</span> Folded source block</h3>
+</div>
+</div>
+
+
+<div id="outline-container-orgc467143" class="outline-2">
+<h2 id="orgc467143"><span class="section-number-2">4</span> Formulas</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org74f0c6b" class="outline-3">
+<h3 id="org74f0c6b"><span class="section-number-3">4.1</span> Simple equations</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Inline formulas: \(\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}\)
+</p>
+
+<p>
+\[ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org42b4136" class="outline-3">
+<h3 id="org42b4136"><span class="section-number-3">4.2</span> Numbered equations</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+See Equation \eqref{eq:label1}.
+</p>
+
+\begin{equation}
+  \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \label{eq:label1}
+\end{equation}
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3f84d44" class="outline-2">
+<h2 id="org3f84d44"><span class="section-number-2">5</span> Quotes</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org2d00e87" class="outline-3">
+<h3 id="org2d00e87"><span class="section-number-3">5.1</span> Simple Quote</h3>
+<div class="outline-text-3" id="text-5-1">
+<blockquote>
+<p>
+Once upon a time&#x2026;&#x2026;&#x2026;.
+I forgot the rest.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org157fd2f" class="outline-3">
+<h3 id="org157fd2f"><span class="section-number-3">5.2</span> Quote with a Source Reference</h3>
+<div class="outline-text-3" id="text-5-2">
+<blockquote title="Titre du block">
+<p>
+The truth always turns out to be simpler than you thought.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org13cde4b" class="outline-3">
+<h3 id="org13cde4b"><span class="section-number-3">5.3</span> Make a reference to a quote</h3>
+<div class="outline-text-3" id="text-5-3">
+<blockquote>
+<p>
+I would rather have questions that can&rsquo;t be answered than answers that can&rsquo;t be questioned.
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org60c6c95" class="outline-2">
+<h2 id="org60c6c95"><span class="section-number-2">6</span> Tables</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org4620f84" class="outline-3">
+<h3 id="org4620f84"><span class="section-number-3">6.1</span> Basic Table</h3>
+<div class="outline-text-3" id="text-6-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-right">8</td>
+<td class="org-right">9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org02c435d" class="outline-3">
+<h3 id="org02c435d"><span class="section-number-3">6.2</span> Table with a caption</h3>
+<div class="outline-text-3" id="text-6-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Table caption</caption>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-right">8</td>
+<td class="org-right">9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb2c87d0" class="outline-3">
+<h3 id="orgb2c87d0"><span class="section-number-3">6.3</span> Reference to a table</h3>
+<div class="outline-text-3" id="text-6-3">
+<table id="org9e0fe50" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 2:</span> Table caption</caption>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">A</th>
+<th scope="col" class="org-right">B</th>
+<th scope="col" class="org-right">C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+<td class="org-right">6</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-right">8</td>
+<td class="org-right">9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org83e12c5" class="outline-2">
+<h2 id="org83e12c5"><span class="section-number-2">7</span> Images</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org43efd7a" class="outline-3">
+<h3 id="org43efd7a"><span class="section-number-3">7.1</span> Simple image</h3>
+<div class="outline-text-3" id="text-7-1">
+
+<div class="figure">
+<p><img src="assets/figure.png" alt="figure.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge14e71c" class="outline-3">
+<h3 id="orge14e71c"><span class="section-number-3">7.2</span> Simple image with caption</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+See Figure <a href="#org74d667e">2</a>.
+</p>
+
+
+<div id="org74d667e" class="figure">
+<p><img src="assets/figure.png" alt="figure.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Figure caption</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Thomas Dehaeze</p>
+<p class="date">Created: 2020-04-22 mer. 18:57</p>
+</div>
+</body>
+</html>

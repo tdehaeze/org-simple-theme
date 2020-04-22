@@ -1,0 +1,11 @@
+@import "../_partials/_caption.scss";
+
+#content {
+    table {
+        caption {
+            .table-number {
+                @extend %caption;
+            }
+        }
+    }
+}
